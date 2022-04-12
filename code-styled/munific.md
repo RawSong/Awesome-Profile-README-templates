@@ -7,24 +7,27 @@
 module main
 
 aboutMe :: struct {
-  pronouns :: string[];
+  name :: string[];
   languages :: string[];
   hobbies :: string[];
+  love :: string[];
   funFact :: string;
 }
 
 main :: func(): void {
   ethan :: aboutMe = {
-    pronouns: ["He", "Him"],
-    languages: ["C", "C#", "Java", "Python"],
-    hobbies: ["Coding", "Gaming", "Talking"],
+    name: ["Hu Cunsong"],
+    languages: ["Java", "C", "PHP", "Python"],
+    hobbies: ["吃饭", "睡觉", "游戏"],
+    love: ["谢佳红"]
     funFact: "The first computer virus was created in 1983!"
   };
 
-  println "Pronouns: ${ethan.pronouns}";
-  println "Languages I Know: ${ethan.languages}";
-  println "My Hobbies: ${ethan.hobbies}";
-  println "Fun Fact: ${ethan.funFact}";
+  println "My name is: ${ethan.pronouns}";
+  println "我会的语言: ${ethan.languages}";
+  println "我的爱好: ${ethan.hobbies}";
+  println "我最爱的人: ${ethan.hobbies}";
+  println "趣事: ${ethan.funFact}";
 }
 ```
 
